@@ -1,7 +1,7 @@
 # This is just some quick Go code to get an AWS certificate 
 
 ## Build
-`go build -o get-aws-cert main.go`
+`go build -o bin/get-aws-cert main.go`
 
 ## Use
 > NOTE: This application expects AWS configuration to exist in the default location. This location at the time of writing this is `~/.aws/config`.
@@ -15,3 +15,5 @@ j;lkjFLKJfRLK@#J$uF:LKj@$;l#lkFjEeElkjfP{:ofIjAKL@RTjh@fj@3yFj@h
 [...]
 -----END CERTIFICATE-----
 ```
+## Add to PATH (optional)
+`export PATH=$PWD/bin:$PATH`
