@@ -14,7 +14,6 @@ import (
 
 func main() {
 	arn := flag.String("arn", "", "Path to file containing ARN or ARN itself.")
-	// outFile := flag.String("out-file", "stdout", "Path to file which will hold certificate.")
 	flag.Parse()
 	fmt.Println("Getting certificate from ARN: ", *arn)
 	cfg, err := config.LoadDefaultConfig(context.TODO())
